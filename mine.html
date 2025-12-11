@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question for You</title>
+
+<style>
+    body {
+        margin: 0;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+
+    .box {
+        background: rgba(255,255,255,0.25);
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(255,255,255,0.4);
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    button {
+        padding: 12px 30px;
+        margin: 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .yes {
+        background: #ff007f;
+        color: white;
+    }
+
+    .no {
+        background: #ffffff;
+        color: #ff007f;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<script>
+function goYes() {
+    window.location.href = "yes.html";
+}
+function goNo() {
+    window.location.href = "no.html";
+}
+</script>
+
+</head>
+<body>
+
+<div class="box">
+    <h1>How are you feeling right now?🧐</h1>
+
+    <br>
+
+    <button class="yes" onclick="goYes()">High on energy😎</button>
+    <button class="no" onclick="goNo()">No, I’m kinda drained today😭</button>
+</div>
+
+</body>
+</html>
