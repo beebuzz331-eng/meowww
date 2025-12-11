@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Kuchupuchu</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+        color: #ff007f;
+        margin-top: 20px;
+        animation: pop 1.2s infinite alternate;
+    }
+
+    @keyframes pop {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
+    }
+
+    .kitty {
+        width: 250px;
+        cursor: pointer;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        background: #ff007f;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+function nextPage() {
+    window.location.href = "love.html";
+}
+</script>
+
+</head>
+<body>
+
+<img class="kitty" 
+     src="https://media.tenor.com/a09Axxf_vbkAAAAM/hello-kitty.gif" 
+     alt="Cute Dancing Cat" 
+     onclick="nextPage()">
+
+<h1>My Kuchupuchu 💖</h1>
+<button onclick="nextPage()">Click to Continue ➜</button>
+
+</body>
+</html>
