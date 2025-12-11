@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fdf2f8; /* soft rose */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #4b0f31;
+    }
+
+    .card {
+        background: #ffffff;
+        border-radius: 22px;
+        padding: 40px 35px;
+        width: 85%;
+        max-width: 380px;
+        box-shadow: 0 8px 20px rgba(255, 180, 200, 0.3);
+        animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(25px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .cat {
+        width: 230px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform .25s ease;
+    }
+
+    .cat:hover {
+        transform: scale(1.05);
+    }
+
+</style>
+
+<script>
+function nextPage(){
+    window.location.href = "mine.html";
+}
+</script>
+
+</head>
+<body>
+
+<div class="card">
+    <h1></b></h1>
+
+    <img class="cat"
+         src="https://media.tenor.com/SC0IVbuArV8AAAAM/cute-bear.gif"
+
+         alt="Cute Cat"
+        onclick="nextPage()">
+</div>
+
+</body>
+</html>
